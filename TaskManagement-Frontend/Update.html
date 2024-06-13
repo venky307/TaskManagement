@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Edit Task</h1>
+        <form onsubmit="event.preventDefault(); updateTask()">
+            <input type="hidden" id="taskId" value="">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="description" placeholder="Description">
+            <input type="date" id="dueDate">
+            <button type="submit">Update Task</button>
+            <button onclick="window.location.href = 'index.html'">Cancel</button>
+        </form>
+    </div>
+    <script src="update.js"></script>
+</body>
+</html>
